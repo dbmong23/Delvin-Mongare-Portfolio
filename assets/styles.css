@@ -6,17 +6,39 @@ margin: 0;
 
 body {
     background-color: beige;
+    margin:auto;
+    padding:20px;
+    align-content: center;
 }
 .title {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: auto;
+    padding: 20px;
+    font-style: oblique; font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.979);
 }
 .header h1 {
     display: inline block;
     font-size: 36px;
     color:rgb(75, 47, 10);
-    background-image: url(../assets/images/processed-3F4C425C-A164-4F81-99F7-91BB948C2DED-7B5B9E01-E7DF-4D96-B8F8-B1E2C7858EA9.jpeg);
+    background-color:aliceblue;
     background-size: cover;
     background-position:initial;
     width:100%;
 }
+.top{
+    background-image: url(../assets/images/global\ network.png);
+    background-size: cover;
+    background-position: center;
+    height: 400px; max-width: 100%;
+}
+.pagelinks {
+    float: left;
+    display: inline;
+}
+.footer{
+    align-items: center;
+
+}
+@media screen and (max-width: 992px){}
+@media screen and (max-width: 768px){}
+@media screen and (max-width: 576px){}
