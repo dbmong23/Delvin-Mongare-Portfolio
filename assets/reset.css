@@ -1,0 +1,21 @@
+.header nav a {
+    display: block;
+    justify-content:flex-end; align-items: end;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+   
+nav {
+    display: flex;
+    justify-content: end;
+
+}
+nav a {
+    padding:20px;
+    text-align:center;
+    float: left;
+    display: inline;
+    flex-direction: row;
+    flex-wrap: wrap; font-weight: 600;
+    flex-direction: row;
+}
+
