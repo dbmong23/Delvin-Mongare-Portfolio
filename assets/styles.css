@@ -1,11 +1,9 @@
 * {
 box-sizing: border-box;
-padding: 0;
-margin: 0;
 }
 
 body {
-    background-color: rgb(169, 171, 173);
+    background-color: rgb(247, 247, 247);
     margin:auto;
     padding:20px;
     align-content: center;
@@ -31,20 +29,57 @@ body {
     background-position: center;
     height:600px; max-width: 100%;
 }
-.pagelinks {
-    float: left;
-    display: inline;
-    flex-direction: row;
-    flex-wrap: wrap;
+
+.content {
+display: block;
+flex-direction: row;
+justify-content: center;
+align-items: stretch;
+background-color: azure;
+width: 90%;
+height: 100vh;
+margin:0, auto; padding: 20px;
 }
-.mern, .css, .js, .full-stark {
-    
+.sidebar{
+    display:flex; float: left;
+    align-items: flex-start; justify-content: stretch;
 }
-.footer{
-    align-items: center;
-    flex-direction: row;
+
+.aboutme{
+display: block;
+height: 25%; float: inline-start;
 
 }
-@media screen and (max-width: 992px){}
-@media screen and (max-width: 768px){}
-@media screen and (max-width: 576px){}
+.MERN, .css, .js, .full-stark{
+display: grid; max-width: 75%;
+float: right; padding: 20px; justify-content: space-evenly;
+}
+
+footer{
+    align-items: center;
+    background-color:rgb(189, 199, 208);
+    color: black;
+    text-align: center; flex-direction: row; text-wrap: wrap;
+    
+}
+@media screen and (max-width: 992px){
+    main,
+    nav,
+.content {
+    flex-direction: column;
+}
+}
+@media screen and (max-width: 768px){
+    main,
+    nav,
+.content {
+    flex-direction: column;
+}
+}
+@media screen and (max-width: 576px){
+    main,
+    nav,
+.content {
+    flex-direction: column;
+}
+}
