@@ -12,19 +12,19 @@ body {
 }
 header{
     display: flex; justify-content: space-between; align-items: center;
-    padding: 1%;background-color:aliceblue;
+    padding: 1%; background-color:aliceblue;
 }
 nav ul{
-    display: flex; justify-content: space-between; min-width: 300px;
+    display: flex; justify-content:space-evenly;
     list-style: none;
 }
 nav a {
-    padding:20px;
+    padding:5px; justify-content: space-evenly;
     text-align:center;
     float: left;
     display: inline;
     flex-direction: row;
-    flex-wrap: wrap; font-weight: 300;
+    flex-wrap: wrap; font-weight: 200;
     flex-direction: row;
 }
 .title {
@@ -33,54 +33,45 @@ nav a {
     font-style: oblique; font-weight: 400;
     background-color: rgba(255, 255, 255, 0.979);
 }
-.header h1 {
-    display: inline block;
-    font-size: 36px;
+.header h1, h2 {
+    display: inline block; font-weight: 300;
+    font-size: 20px;
     color:rgb(75, 47, 10);
     background-size: cover;
     background-position:initial;
-    width:100%;
 }
 .top{
     background-image: url(../assets/images/IMG_4987.jpeg);
     background-size: cover;
     background-position: center;
-    height:600px; max-width: 100%;
+    height:300px; max-width: 100%;
 }
+
 p{
-    font-size: large;
+    font-size: large; flex:2; display: block; justify-content: right;
 }
-.content {
-display: block;
-flex-direction: row;
-justify-content: center;
-align-items: stretch;
-background-color: azure;
-width: 90%;
-height: 100vh;
-margin:0, auto; padding: 20px;
+
+main{
+    display: flex; flex-wrap: wrap; margin-top: 2%;
 }
 .sidebar{
-    display:flex; float: left;
-    align-items: flex-start; justify-content: stretch; font-size: xx-large;
-    font-weight: 900; list-style: none;
+    display:flex; float: left; flex-grow:0.5; flex-basis: 25%;
+    align-items: center; justify-content: 10px, space-between; font-size: large;
+    font-weight: 600; list-style: none; max-height: 100%; min-width: 250px;
 }
-
-.aboutme{
-display: block;
-height: 25%; float: inline-start;
-
-}
-.MERN, .css, .js, .full-stark{
-display: grid; max-width: 75%;
-float: right; padding: 20px; justify-content: space-evenly;
+article{
+    border:3px, transparent; display: inline-flex; flex-wrap: wrap;
+    border-radius: 5px; flex-direction:column;
+    padding: 8px; justify-content: right; float: right;
+    flex-basis:400px; flex: 3;
+    min-height:200px; flex-grow:4; flex-basis: 75%;
 }
 
 footer{
     align-items: center;
     background-color:rgb(189, 199, 208);
     color: black;
-    text-align: center; flex-direction: row; text-wrap: wrap;
+    text-align: center; flex-direction: row; text-wrap: nowrap; position:relative;
     
 }
 @media screen and (max-width: 992px){
