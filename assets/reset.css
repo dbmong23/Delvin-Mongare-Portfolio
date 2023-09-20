@@ -9,13 +9,5 @@ nav {
     justify-content: end;
 
 }
-nav a {
-    padding:20px;
-    text-align:center;
-    float: left;
-    display: inline;
-    flex-direction: row;
-    flex-wrap: wrap; font-weight: 600;
-    flex-direction: row;
-}
+
 
